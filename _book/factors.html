@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>RUSLE Factors | The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling.</title>
+  <meta name="description" content="RUSLE Factors | The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling." />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="RUSLE Factors | The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling." />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="RUSLE Factors | The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling." />
+  
+  
+  
+
+
+
+<meta name="date" content="2023-02-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="overview.html"/>
+<link rel="next" href="sec-Data-Requirements.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i>Project Overview</a>
+<ul>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#motivation"><i class="fa fa-check"></i>Motivation</a></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#objective"><i class="fa fa-check"></i>Objective</a></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#background"><i class="fa fa-check"></i>Background</a></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#limitations"><i class="fa fa-check"></i>Limitations</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html"><i class="fa fa-check"></i>RUSLE Factors</a>
+<ul>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-1"><i class="fa fa-check"></i>Factor 1 - Rainfall Erosivity (R)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-2"><i class="fa fa-check"></i>Factor 2 - Slope Length (LS)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#factor3"><i class="fa fa-check"></i>Factor 3 - Soil Erodibility (K)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-4"><i class="fa fa-check"></i>Factor 4 - Crop/Vegetation and Management Factor (C)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-5"><i class="fa fa-check"></i>Factor 5 - The Support Practice Factor (P)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-Data-Requirements.html"><a href="sec-Data-Requirements.html"><i class="fa fa-check"></i>Data Requirements</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html"><i class="fa fa-check"></i>Methods for Calculating RUSLE Factors</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-required-r-packages"><i class="fa fa-check"></i>RStudio Preparation:</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#packages"><i class="fa fa-check"></i>Required R Packages:</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-rstudio-preparation"><i class="fa fa-check"></i>Setting the Coordinate Reference System:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-factor-1-method"><i class="fa fa-check"></i>Factor 1 - Rainfall Erosivity (R)</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-R-input-data"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-calculating-the-r-factor"><i class="fa fa-check"></i>Calculating the R Factor:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-2"><i class="fa fa-check"></i>Factor 2 - Slope Length (LS)</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-ls-input-data"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-calculating-the-ls-factor"><i class="fa fa-check"></i>Calculating the LS Factor:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-factor-3"><i class="fa fa-check"></i>Factor 3 - Soil Erodibility (K)</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-input-data-ls"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-calculating-the-k-factor"><i class="fa fa-check"></i>Calculating the K Factor:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-4"><i class="fa fa-check"></i>Factor 4 - Crop/Vegetation and Management Factor</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-input-data-c"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-calculating-the-c-factor"><i class="fa fa-check"></i>Calculating the C Factor:</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html"><i class="fa fa-check"></i>Applying the RUSLE Equation:</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-application-1-rusle-post-burn"><i class="fa fa-check"></i>Application 1: RUSLE Post Burn</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-1-load-rusle-factors"><i class="fa fa-check"></i>Step 1: Load RUSLE Factors</a></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-3-re-sample-rusle-factors"><i class="fa fa-check"></i>Step 2: Re-sample RUSLE Factors</a></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-4-combine-factors-using-the-rusle"><i class="fa fa-check"></i>Step 3: Combine Factors using the RUSLE</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-application-2-rusle-post-burn"><i class="fa fa-check"></i>Application 2: RUSLE Post Burn</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-1-load-rusle-factors_post"><i class="fa fa-check"></i>Step 1: Load RUSLE Factors</a></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-3-resample-rusle-factors"><i class="fa fa-check"></i>Step 2: Re-sample RUSLE Factors</a></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-4-combine-factors-using-the-rusle-post"><i class="fa fa-check"></i>Step 3: Combine Factors using the RUSLE</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling.</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="factors" class="section level1 unnumbered hasAnchor">
+<h1>RUSLE Factors<a href="factors.html#factors" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The Revised Universal Soil Loss Equation (RUSLE) is a modified version of the Universal Soil Loss Equation (USLE) proposed by <a href="https://naldc.nal.usda.gov/download/CAT79706928/PDF">Wischmeier and Smith, 1978</a>, which was developed for predicting annual soil loss across agriculture regions. In this study, the RUSLE is used to estimate soil loss during the first year after fire (Trozzo Creek Fire (2021)).</p>
+<p>The RUSLE equation is comprised of five factors which are multiplied to produce a RUSLE soil erosion surface.</p>
+<span class="math display">\[\begin{equation}
+A = R * LS * K * C * P
+\end{equation}\]</span>
+<p>Where <strong>R</strong> is the rainfall erosivity, <strong>LS</strong> is a non-dimensional topographic factor, <strong>K</strong> is the soil erodibility, <strong>C</strong> is a cover-management factor, and <strong>P</strong> reflects soil conservation practices.</p>
+<div id="sec-factor-1" class="section level2 unnumbered hasAnchor">
+<h2>Factor 1 - Rainfall Erosivity (R)<a href="factors.html#sec-factor-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>R is the rainfall and runoff factor by geographic location. The greater the intensity and duration of the rain storm, the higher the erosion potential.</p>
+<p>Among the factors included in RUSLE, rainfall erosivity is often most closely correlated with temporal trends in soil loss (<a href="https://www.researchgate.net/publication/336586973_A_comprehensive_study_of_erosivity_and_soil_erosion_over_a_small_tropical_islet_Round_Island_Mauritius">Hedding et al.,2020</a>), since sediments are rarely detached without sufficient rainfall. The impact of rainfall’s kinetic energy on soil erosion is captured in the R factor. We use global rainfall erosivity data combined and provided by the <a href="https://esdac.jrc.ec.europa.eu/content/global-rainfall-erosivity#tabs-0-description=1">European Soil Data Centre (ESDAC)</a>. The data used in this study is the most accurate and currently available in the study region. However, the spatial scale of this data is a limitation and prevents high-resolution RUSLE outputs from being derived.</p>
+</div>
+<div id="sec-factor-2" class="section level2 unnumbered hasAnchor">
+<h2>Factor 2 - Slope Length (LS)<a href="factors.html#sec-factor-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>LS is the slope length-gradient factor. The LS factor represents a ratio of soil loss under given conditions to that at a site. The steeper and longer the slope, the higher the risk for erosion.</p>
+<p>The LS factor is one of the most challenging factors of the RUSLE. The L and S factors are combined as the topographic LS factor. Slope steepness (S) seeks to capture the rate of change in soil loss with varying gradients, while slope length (L) accounts for the distance over which a slope gradient occurs. Estimates of S and L for British Columbia are improved via enhanced hydrological flow routing and empirical equations describing S and L (see <strong>Table 1</strong>). Here, the LS-calculation is performed using the original equation proposed by Desmet and Govers (1996).</p>
+<p><strong>Table 1.</strong> Values for topographic factor, LS, for low ratio of rill:inter-rill erosion, such as consolidated soil conditions with cover and rangeland (applicable to thawing soils where both inter-rill and rill erosion are significant) (<a href="https://sis.agr.gc.ca/cansis/publications/manuals/2002-92/rusle-can.pdf">Wall et al., 2002</a>).</p>
+<table class=" lightable-classic-2" style="font-family: Times New Roman; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="empty-cells: hide;" colspan="1">
+</th>
+<th style="padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="12">
+<div style="border-bottom: 1px solid #111111; margin-bottom: -1px; ">
+Slope length in meters (m)
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:right;">
+Slope(%)
+</th>
+<th style="text-align:right;">
+2m
+</th>
+<th style="text-align:right;">
+5m
+</th>
+<th style="text-align:right;">
+10m
+</th>
+<th style="text-align:right;">
+15m
+</th>
+<th style="text-align:right;">
+25m
+</th>
+<th style="text-align:right;">
+50m
+</th>
+<th style="text-align:right;">
+75m
+</th>
+<th style="text-align:right;">
+100m
+</th>
+<th style="text-align:right;">
+150m
+</th>
+<th style="text-align:right;">
+200m
+</th>
+<th style="text-align:right;">
+250m
+</th>
+<th style="text-align:right;">
+300m
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+0.2
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+0.5
+</td>
+<td style="text-align:right;">
+0.07
+</td>
+<td style="text-align:right;">
+0.08
+</td>
+<td style="text-align:right;">
+0.08
+</td>
+<td style="text-align:right;">
+0.08
+</td>
+<td style="text-align:right;">
+0.08
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+1.0
+</td>
+<td style="text-align:right;">
+0.11
+</td>
+<td style="text-align:right;">
+0.12
+</td>
+<td style="text-align:right;">
+0.13
+</td>
+<td style="text-align:right;">
+0.13
+</td>
+<td style="text-align:right;">
+0.14
+</td>
+<td style="text-align:right;">
+0.15
+</td>
+<td style="text-align:right;">
+0.15
+</td>
+<td style="text-align:right;">
+0.16
+</td>
+<td style="text-align:right;">
+0.16
+</td>
+<td style="text-align:right;">
+0.16
+</td>
+<td style="text-align:right;">
+0.17
+</td>
+<td style="text-align:right;">
+0.17
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+2.0
+</td>
+<td style="text-align:right;">
+0.18
+</td>
+<td style="text-align:right;">
+0.20
+</td>
+<td style="text-align:right;">
+0.22
+</td>
+<td style="text-align:right;">
+0.23
+</td>
+<td style="text-align:right;">
+0.25
+</td>
+<td style="text-align:right;">
+0.28
+</td>
+<td style="text-align:right;">
+0.29
+</td>
+<td style="text-align:right;">
+0.30
+</td>
+<td style="text-align:right;">
+0.32
+</td>
+<td style="text-align:right;">
+0.33
+</td>
+<td style="text-align:right;">
+0.35
+</td>
+<td style="text-align:right;">
+0.35
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+3.0
+</td>
+<td style="text-align:right;">
+0.23
+</td>
+<td style="text-align:right;">
+0.27
+</td>
+<td style="text-align:right;">
+0.31
+</td>
+<td style="text-align:right;">
+0.33
+</td>
+<td style="text-align:right;">
+0.36
+</td>
+<td style="text-align:right;">
+0.41
+</td>
+<td style="text-align:right;">
+0.44
+</td>
+<td style="text-align:right;">
+0.47
+</td>
+<td style="text-align:right;">
+0.50
+</td>
+<td style="text-align:right;">
+0.53
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+0.57
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+4.0
+</td>
+<td style="text-align:right;">
+0.27
+</td>
+<td style="text-align:right;">
+0.33
+</td>
+<td style="text-align:right;">
+0.39
+</td>
+<td style="text-align:right;">
+0.42
+</td>
+<td style="text-align:right;">
+0.47
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+0.60
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+0.70
+</td>
+<td style="text-align:right;">
+0.74
+</td>
+<td style="text-align:right;">
+0.78
+</td>
+<td style="text-align:right;">
+0.81
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+5.0
+</td>
+<td style="text-align:right;">
+0.31
+</td>
+<td style="text-align:right;">
+0.39
+</td>
+<td style="text-align:right;">
+0.47
+</td>
+<td style="text-align:right;">
+0.52
+</td>
+<td style="text-align:right;">
+0.59
+</td>
+<td style="text-align:right;">
+0.70
+</td>
+<td style="text-align:right;">
+0.77
+</td>
+<td style="text-align:right;">
+0.83
+</td>
+<td style="text-align:right;">
+0.92
+</td>
+<td style="text-align:right;">
+0.99
+</td>
+<td style="text-align:right;">
+1.05
+</td>
+<td style="text-align:right;">
+1.10
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+6.0
+</td>
+<td style="text-align:right;">
+0.35
+</td>
+<td style="text-align:right;">
+0.45
+</td>
+<td style="text-align:right;">
+0.57
+</td>
+<td style="text-align:right;">
+0.61
+</td>
+<td style="text-align:right;">
+0.70
+</td>
+<td style="text-align:right;">
+0.84
+</td>
+<td style="text-align:right;">
+0.94
+</td>
+<td style="text-align:right;">
+1.02
+</td>
+<td style="text-align:right;">
+1.14
+</td>
+<td style="text-align:right;">
+1.24
+</td>
+<td style="text-align:right;">
+1.32
+</td>
+<td style="text-align:right;">
+1.39
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+8.0
+</td>
+<td style="text-align:right;">
+0.41
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+0.69
+</td>
+<td style="text-align:right;">
+0.78
+</td>
+<td style="text-align:right;">
+0.92
+</td>
+<td style="text-align:right;">
+1.15
+</td>
+<td style="text-align:right;">
+1.31
+</td>
+<td style="text-align:right;">
+1.43
+</td>
+<td style="text-align:right;">
+1.63
+</td>
+<td style="text-align:right;">
+1.79
+</td>
+<td style="text-align:right;">
+1.92
+</td>
+<td style="text-align:right;">
+2.03
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+10.0
+</td>
+<td style="text-align:right;">
+0.48
+</td>
+<td style="text-align:right;">
+0.66
+</td>
+<td style="text-align:right;">
+0.84
+</td>
+<td style="text-align:right;">
+0.96
+</td>
+<td style="text-align:right;">
+1.15
+</td>
+<td style="text-align:right;">
+1.47
+</td>
+<td style="text-align:right;">
+1.69
+</td>
+<td style="text-align:right;">
+1.87
+</td>
+<td style="text-align:right;">
+2.15
+</td>
+<td style="text-align:right;">
+2.38
+</td>
+<td style="text-align:right;">
+2.57
+</td>
+<td style="text-align:right;">
+2.74
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+12.0
+</td>
+<td style="text-align:right;">
+0.61
+</td>
+<td style="text-align:right;">
+0.86
+</td>
+<td style="text-align:right;">
+1.11
+</td>
+<td style="text-align:right;">
+1.29
+</td>
+<td style="text-align:right;">
+1.57
+</td>
+<td style="text-align:right;">
+2.03
+</td>
+<td style="text-align:right;">
+2.37
+</td>
+<td style="text-align:right;">
+2.64
+</td>
+<td style="text-align:right;">
+3.07
+</td>
+<td style="text-align:right;">
+3.42
+</td>
+<td style="text-align:right;">
+3.72
+</td>
+<td style="text-align:right;">
+3.99
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+14.0
+</td>
+<td style="text-align:right;">
+0.70
+</td>
+<td style="text-align:right;">
+1.01
+</td>
+<td style="text-align:right;">
+1.33
+</td>
+<td style="text-align:right;">
+1.56
+</td>
+<td style="text-align:right;">
+1.91
+</td>
+<td style="text-align:right;">
+2.52
+</td>
+<td style="text-align:right;">
+2.96
+</td>
+<td style="text-align:right;">
+3.31
+</td>
+<td style="text-align:right;">
+3.89
+</td>
+<td style="text-align:right;">
+4.36
+</td>
+<td style="text-align:right;">
+4.77
+</td>
+<td style="text-align:right;">
+5.12
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+16.0
+</td>
+<td style="text-align:right;">
+0.79
+</td>
+<td style="text-align:right;">
+1.16
+</td>
+<td style="text-align:right;">
+1.54
+</td>
+<td style="text-align:right;">
+1.82
+</td>
+<td style="text-align:right;">
+2.25
+</td>
+<td style="text-align:right;">
+3.00
+</td>
+<td style="text-align:right;">
+3.55
+</td>
+<td style="text-align:right;">
+4.00
+</td>
+<td style="text-align:right;">
+4.74
+</td>
+<td style="text-align:right;">
+5.33
+</td>
+<td style="text-align:right;">
+5.85
+</td>
+<td style="text-align:right;">
+6.31
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+20.0
+</td>
+<td style="text-align:right;">
+0.96
+</td>
+<td style="text-align:right;">
+1.44
+</td>
+<td style="text-align:right;">
+1.96
+</td>
+<td style="text-align:right;">
+2.34
+</td>
+<td style="text-align:right;">
+2.94
+</td>
+<td style="text-align:right;">
+4.00
+</td>
+<td style="text-align:right;">
+4.79
+</td>
+<td style="text-align:right;">
+5.44
+</td>
+<td style="text-align:right;">
+6.51
+</td>
+<td style="text-align:right;">
+7.39
+</td>
+<td style="text-align:right;">
+8.16
+</td>
+<td style="text-align:right;">
+8.85
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+25.0
+</td>
+<td style="text-align:right;">
+1.15
+</td>
+<td style="text-align:right;">
+1.77
+</td>
+<td style="text-align:right;">
+2.45
+</td>
+<td style="text-align:right;">
+2.96
+</td>
+<td style="text-align:right;">
+3.77
+</td>
+<td style="text-align:right;">
+5.22
+</td>
+<td style="text-align:right;">
+6.31
+</td>
+<td style="text-align:right;">
+7.23
+</td>
+<td style="text-align:right;">
+8.74
+</td>
+<td style="text-align:right;">
+10.01
+</td>
+<td style="text-align:right;">
+11.12
+</td>
+<td style="text-align:right;">
+12.11
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+30.0
+</td>
+<td style="text-align:right;">
+1.33
+</td>
+<td style="text-align:right;">
+2.08
+</td>
+<td style="text-align:right;">
+2.92
+</td>
+<td style="text-align:right;">
+3.56
+</td>
+<td style="text-align:right;">
+4.57
+</td>
+<td style="text-align:right;">
+6.42
+</td>
+<td style="text-align:right;">
+7.84
+</td>
+<td style="text-align:right;">
+9.03
+</td>
+<td style="text-align:right;">
+11.01
+</td>
+<td style="text-align:right;">
+12.68
+</td>
+<td style="text-align:right;">
+14.15
+</td>
+<td style="text-align:right;">
+15.47
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+40.0
+</td>
+<td style="text-align:right;">
+1.64
+</td>
+<td style="text-align:right;">
+2.64
+</td>
+<td style="text-align:right;">
+3.78
+</td>
+<td style="text-align:right;">
+4.67
+</td>
+<td style="text-align:right;">
+6.08
+</td>
+<td style="text-align:right;">
+8.72
+</td>
+<td style="text-align:right;">
+10.76
+</td>
+<td style="text-align:right;">
+12.50
+</td>
+<td style="text-align:right;">
+15.43
+</td>
+<td style="text-align:right;">
+17.91
+</td>
+<td style="text-align:right;">
+20.12
+</td>
+<td style="text-align:right;">
+22.11
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+50.0
+</td>
+<td style="text-align:right;">
+1.91
+</td>
+<td style="text-align:right;">
+3.13
+</td>
+<td style="text-align:right;">
+4.55
+</td>
+<td style="text-align:right;">
+5.66
+</td>
+<td style="text-align:right;">
+7.45
+</td>
+<td style="text-align:right;">
+10.83
+</td>
+<td style="text-align:right;">
+13.47
+</td>
+<td style="text-align:right;">
+15.73
+</td>
+<td style="text-align:right;">
+19.57
+</td>
+<td style="text-align:right;">
+22.85
+</td>
+<td style="text-align:right;">
+25.77
+</td>
+<td style="text-align:right;">
+28.43
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 1.5cm; border-right:1px solid;">
+60.0
+</td>
+<td style="text-align:right;">
+2.15
+</td>
+<td style="text-align:right;">
+3.56
+</td>
+<td style="text-align:right;">
+5.22
+</td>
+<td style="text-align:right;">
+6.54
+</td>
+<td style="text-align:right;">
+8.67
+</td>
+<td style="text-align:right;">
+12.71
+</td>
+<td style="text-align:right;">
+15.91
+</td>
+<td style="text-align:right;">
+18.65
+</td>
+<td style="text-align:right;">
+23.34
+</td>
+<td style="text-align:right;">
+27.36
+</td>
+<td style="text-align:right;">
+30.95
+</td>
+<td style="text-align:right;">
+34.23
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="factor3" class="section level2 unnumbered hasAnchor">
+<h2>Factor 3 - Soil Erodibility (K)<a href="factors.html#factor3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>K is the soil erodibility factor. It is the average soil loss in tonnes/hectare (tons/acre) for a particular soil. K is a measure of the susceptibility of soil particles to detachment and transport by rainfall and runoff.</p>
+<p>The K factor incorporates the physical and chemical properties of soil, including fractions of sand, silt, and clay, permeability, structural stability, and organic matter content. The K factor ranges from 1 (very easily eroded) to 0.01 (very stable soil). K factors have been estimated for several surface textures (<strong>Table 2</strong>). We combined soil texture data for the study region with previously calculated soil erodibility data for the province of British Columbia. Without field data, K value information is limited, hence our use of <a href="https://sis.agr.gc.ca/cansis/publications/manuals/2002-92/rusle-can.pdf">province-wide</a> soil erodibility assessments.</p>
+<p><strong>Table 2.</strong> Soil erodibility values (K) for common surface textures in Canada (<a href="https://sis.agr.gc.ca/cansis/publications/manuals/2002-92/rusle-can.pdf">Wall et al., 2002</a>).</p>
+<table class=" lightable-classic-2" style="font-family: Times New Roman; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Texture Class
+</th>
+<th style="text-align:right;">
+Average K Value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Clay
+</td>
+<td style="text-align:right;">
+0.029
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Clay Loam
+</td>
+<td style="text-align:right;">
+0.040
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Coarse Sandy Loam
+</td>
+<td style="text-align:right;">
+0.009
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fine Sand
+</td>
+<td style="text-align:right;">
+0.011
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fine Sandy Loam
+</td>
+<td style="text-align:right;">
+0.024
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Heavy Clay
+</td>
+<td style="text-align:right;">
+0.022
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Loam
+</td>
+<td style="text-align:right;">
+0.040
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Loamy Fine Sand
+</td>
+<td style="text-align:right;">
+0.015
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Loamy Sand
+</td>
+<td style="text-align:right;">
+0.005
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Loamy Very Fine Sand
+</td>
+<td style="text-align:right;">
+0.051
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sand
+</td>
+<td style="text-align:right;">
+0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sandy Clay Loam
+</td>
+<td style="text-align:right;">
+0.026
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sandy Loam
+</td>
+<td style="text-align:right;">
+0.017
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silt Loam
+</td>
+<td style="text-align:right;">
+0.050
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silty Clay
+</td>
+<td style="text-align:right;">
+0.034
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Silty Clay Loam
+</td>
+<td style="text-align:right;">
+0.042
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Very Fine Sand
+</td>
+<td style="text-align:right;">
+0.057
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Very Fine Sandy Loam
+</td>
+<td style="text-align:right;">
+0.046
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="sec-factor-4" class="section level2 unnumbered hasAnchor">
+<h2>Factor 4 - Crop/Vegetation and Management Factor (C)<a href="factors.html#sec-factor-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>C is the crop/vegetation and management factor. It is used to determine the relative effectiveness of soil and crop management systems in terms of preventing soil loss.</p>
+<p>In Canada, C factor values have been developed for major agricultural regions where heavy cropping, tillage, and soil management systems of Canadian crops have been developed. Formulations of the C factor generally only include three cover scenarios (i.e., bare ground, grass, and tree cover) that remain static throughout the year (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2867509/">Dymond et al., 2010</a>). The majority of the study area is covered in forested and semi-natural land. Here, C factor values are assigned based on those proposed by (<a href="https://www.researchgate.net/publication/235988636_Application_of_the_revised_universal_soil_loss_equation_model_on_landslide_prevention_An_example_from_N_Euboea_Evia_Island_Greece">Rozos et al. 2013)</a> (<strong>Table 3</strong>).</p>
+<p><strong>Table 3.</strong> Crop/Vegetation and Management (C) for common non-agriculture landscapes (<a href="https://www.researchgate.net/publication/235988636_Application_of_the_revised_universal_soil_loss_equation_model_on_landslide_prevention_An_example_from_N_Euboea_Evia_Island_Greece">Rozos et al. 2013</a>, <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/ldr.2814">Taye et al. 2017</a>, <a href="https://www.researchgate.net/publication/299525502_Integrated_Use_of_GCM_RS_and_GIS_for_the_Assessment_of_Hillslope_and_Gully_Erosion_in_the_Mushi_River_Sub-Catchment_Northeast_China">Wang et al.2016</a>, <a href="https://www.researchgate.net/publication/338289885_Estimation_of_Soil_Erosion_and_Sediment_Yield_in_the_Lancang-Mekong_River_Using_the_Modified_Revised_Universal_Soil_Loss_Equation_and_GIS_Techniques">Chuenchum et al. 2020</a>, <a href="https://www.researchgate.net/publication/315768765_Mapping_erosion_prone_areas_in_the_Bouhamdane_watershed_Algeria_using_the_Revised_Universal_Soil_Loss_Equation_through_GIS">Bouguerra et al. 2017</a>, <a href="https://www.researchgate.net/publication/334635031_Effect_of_Cell_Size_of_Digital_Elevation_Model_on_Soil_Loss_prediction_in_Maithon_Catchment">Sharma 2012</a>, <a href="https://www.researchgate.net/publication/288059143_Assimilating_satellite_imagery_and_visible-near_infrared_spectroscopy_to_model_and_map_soil_loss_by_water_erosion_in_Australia">Teng et al. 2016</a>).</p>
+<table class=" lightable-classic-2" style="font-family: Times New Roman; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="empty-cells: hide;" colspan="1">
+</th>
+<th style="padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="7">
+<div style="border-bottom: 1px solid #111111; margin-bottom: -1px; ">
+Crop/Vegetation and Management Factor (C)
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Land cover
+</th>
+<th style="text-align:left;">
+Rozos et al. (2013)
+</th>
+<th style="text-align:left;">
+Taye et al.(2017)
+</th>
+<th style="text-align:left;">
+Wang et al.(2016)
+</th>
+<th style="text-align:left;">
+Chuenchum et al. (2020)
+</th>
+<th style="text-align:left;">
+Bouguerra et al. (2017)
+</th>
+<th style="text-align:left;">
+Sharma (2012)
+</th>
+<th style="text-align:left;">
+Teng et al. (2016)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 2cm; border-right:1px solid;">
+Urban
+</td>
+<td style="text-align:left;">
+0.05
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0.1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0.002
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; border-right:1px solid;">
+Forest
+</td>
+<td style="text-align:left;">
+0.001
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0.055
+</td>
+<td style="text-align:left;">
+0.037
+</td>
+<td style="text-align:left;">
+0.185
+</td>
+<td style="text-align:left;">
+0.004
+</td>
+<td style="text-align:left;">
+0.02
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; border-right:1px solid;">
+Cultivated
+</td>
+<td style="text-align:left;">
+0.065
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0.18
+</td>
+<td style="text-align:left;">
+0.5
+</td>
+<td style="text-align:left;">
+0.55
+</td>
+<td style="text-align:left;">
+0.32
+</td>
+<td style="text-align:left;">
+0.07
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; border-right:1px solid;">
+Barren Land
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+0.35
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+0.1
+</td>
+<td style="text-align:left;">
+0.35
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; border-right:1px solid;">
+Burn
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; border-right:1px solid;">
+Rangeland
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0.04
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0.4
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0.08
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; border-right:1px solid;">
+Road
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2cm; border-right:1px solid;">
+Grassland
+</td>
+<td style="text-align:left;">
+0.1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0.1
+</td>
+<td style="text-align:left;">
+0.17
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0.06
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="sec-factor-5" class="section level2 unnumbered hasAnchor">
+<h2>Factor 5 - The Support Practice Factor (P)<a href="factors.html#sec-factor-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>P is the support practice factor. It reflects the effects of practices that will reduce the amount and rate of the water runoff and thus reduce the amount of erosion.</p>
+<p>The Support Practice factor (P) accounts for the erosion control effectiveness of support practices. The most commonly used supporting cropland practice are cross slope cultivation, contour farming, strip cropping, and terracing. Common P values are presented in <strong>Table 4.</strong> In the absence of any support practice, P assumes unity and equals 1 in the RUSLE. Here we use a P value of 1 to reflect that support practices have not been completed in the area.</p>
+<p><strong>Table 4.</strong> Generalized P values (<a href="https://sis.agr.gc.ca/cansis/publications/manuals/2002-92/rusle-can.pdf">Wall et al., 2002</a>).</p>
+<table class=" lightable-classic-2" style="font-family: Times New Roman; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Support Practice
+</th>
+<th style="text-align:right;">
+P-value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+No support practice
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cross slope farming
+</td>
+<td style="text-align:right;">
+0.75
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Contour farming (3-8% slope)
+</td>
+<td style="text-align:right;">
+0.50
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Strip cropping, cross slope (3-8% slope)
+</td>
+<td style="text-align:right;">
+0.38
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Strip cropping, on contour (3-8% slope)
+</td>
+<td style="text-align:right;">
+0.25
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="overview.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec-Data-Requirements.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

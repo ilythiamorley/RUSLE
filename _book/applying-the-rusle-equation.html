@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Applying the RUSLE Equation: | The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling.</title>
+  <meta name="description" content="Chapter 1 Applying the RUSLE Equation: | The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling." />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Applying the RUSLE Equation: | The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling." />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Applying the RUSLE Equation: | The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling." />
+  
+  
+  
+
+
+
+<meta name="date" content="2023-02-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sec-calculating-rusle-factors.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i>Project Overview</a>
+<ul>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#motivation"><i class="fa fa-check"></i>Motivation</a></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#objective"><i class="fa fa-check"></i>Objective</a></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#background"><i class="fa fa-check"></i>Background</a></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#limitations"><i class="fa fa-check"></i>Limitations</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html"><i class="fa fa-check"></i>RUSLE Factors</a>
+<ul>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-1"><i class="fa fa-check"></i>Factor 1 - Rainfall Erosivity (R)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-2"><i class="fa fa-check"></i>Factor 2 - Slope Length (LS)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#factor3"><i class="fa fa-check"></i>Factor 3 - Soil Erodibility (K)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-4"><i class="fa fa-check"></i>Factor 4 - Crop/Vegetation and Management Factor (C)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-5"><i class="fa fa-check"></i>Factor 5 - The Support Practice Factor (P)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-Data-Requirements.html"><a href="sec-Data-Requirements.html"><i class="fa fa-check"></i>Data Requirements</a></li>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html"><i class="fa fa-check"></i>Methods for Calculating RUSLE Factors</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-required-r-packages"><i class="fa fa-check"></i>RStudio Preparation:</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#packages"><i class="fa fa-check"></i>Required R Packages:</a></li>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-rstudio-preparation"><i class="fa fa-check"></i>Setting the Coordinate Reference System:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-factor-1-method"><i class="fa fa-check"></i>Factor 1 - Rainfall Erosivity (R)</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-R-input-data"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-calculating-the-r-factor"><i class="fa fa-check"></i>Calculating the R Factor:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-2"><i class="fa fa-check"></i>Factor 2 - Slope Length (LS)</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-ls-input-data"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-calculating-the-ls-factor"><i class="fa fa-check"></i>Calculating the LS Factor:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-factor-3"><i class="fa fa-check"></i>Factor 3 - Soil Erodibility (K)</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-input-data-ls"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-calculating-the-k-factor"><i class="fa fa-check"></i>Calculating the K Factor:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-4"><i class="fa fa-check"></i>Factor 4 - Crop/Vegetation and Management Factor</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-input-data-c"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-calculating-rusle-factors.html"><a href="sec-calculating-rusle-factors.html#sec-calculating-the-c-factor"><i class="fa fa-check"></i>Calculating the C Factor:</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="applying-the-rusle-equation.html"><a href="applying-the-rusle-equation.html"><i class="fa fa-check"></i><b>1</b> Applying the RUSLE Equation:</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="applying-the-rusle-equation.html"><a href="applying-the-rusle-equation.html#application-1-rusle-post-burn"><i class="fa fa-check"></i><b>1.1</b> Application 1: RUSLE Post Burn</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="applying-the-rusle-equation.html"><a href="applying-the-rusle-equation.html#step-1-load-rusle-factors"><i class="fa fa-check"></i><b>1.1.1</b> Step 1: Load RUSLE Factors</a></li>
+<li class="chapter" data-level="1.1.2" data-path="applying-the-rusle-equation.html"><a href="applying-the-rusle-equation.html#step-2-set-the-extent-of-rusle-factors"><i class="fa fa-check"></i><b>1.1.2</b> Step 2: Set the Extent of RUSLE Factors</a></li>
+<li class="chapter" data-level="1.1.3" data-path="applying-the-rusle-equation.html"><a href="applying-the-rusle-equation.html#step-3-resample-rusle-factors"><i class="fa fa-check"></i><b>1.1.3</b> Step 3: Resample RUSLE Factors</a></li>
+<li class="chapter" data-level="1.1.4" data-path="applying-the-rusle-equation.html"><a href="applying-the-rusle-equation.html#step-4-combine-factors-using-the-rusle"><i class="fa fa-check"></i><b>1.1.4</b> Step 4: Combine Factors using the RUSLE</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="applying-the-rusle-equation.html"><a href="applying-the-rusle-equation.html#application-1-rusle-post-burn-1"><i class="fa fa-check"></i><b>1.2</b> Application 1: RUSLE Post Burn</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="applying-the-rusle-equation.html"><a href="applying-the-rusle-equation.html#step-1-load-rusle-factors-1"><i class="fa fa-check"></i><b>1.2.1</b> Step 1: Load RUSLE Factors</a></li>
+<li class="chapter" data-level="1.2.2" data-path="applying-the-rusle-equation.html"><a href="applying-the-rusle-equation.html#qstep-2-set-the-extent-of-rusle-factors"><i class="fa fa-check"></i><b>1.2.2</b> QStep 2: Set the Extent of RUSLE Factors</a></li>
+<li class="chapter" data-level="1.2.3" data-path="applying-the-rusle-equation.html"><a href="applying-the-rusle-equation.html#step-3-resample-rusle-factors-1"><i class="fa fa-check"></i><b>1.2.3</b> Step 3: Resample RUSLE Factors</a></li>
+<li class="chapter" data-level="1.2.4" data-path="applying-the-rusle-equation.html"><a href="applying-the-rusle-equation.html#step-4-combine-factors-using-the-rusle-1"><i class="fa fa-check"></i><b>1.2.4</b> Step 4: Combine Factors using the RUSLE</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling.</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="applying-the-rusle-equation" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Applying the RUSLE Equation:<a href="applying-the-rusle-equation.html#applying-the-rusle-equation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In this section, we present two example applications of the RUSLE. These case studies show a applications of the RUSLE in the same region pre and post fire.</p>
+<div id="application-1-rusle-post-burn" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Application 1: RUSLE Post Burn<a href="applying-the-rusle-equation.html#application-1-rusle-post-burn" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="step-1-load-rusle-factors" class="section level3 hasAnchor" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Step 1: Load RUSLE Factors<a href="applying-the-rusle-equation.html#step-1-load-rusle-factors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="applying-the-rusle-equation.html#cb22-1" aria-hidden="true" tabindex="-1"></a>K <span class="ot">=</span> <span class="fu">raster</span>(<span class="st">&quot;data/4/K/K_Factor.tif&quot;</span>)</span>
+<span id="cb22-2"><a href="applying-the-rusle-equation.html#cb22-2" aria-hidden="true" tabindex="-1"></a>R <span class="ot">=</span> <span class="fu">raster</span>(<span class="st">&quot;data/4/R/R_Factor.tif&quot;</span>)</span>
+<span id="cb22-3"><a href="applying-the-rusle-equation.html#cb22-3" aria-hidden="true" tabindex="-1"></a>LS <span class="ot">=</span> <span class="fu">raster</span>(<span class="st">&quot;data/4/LS/LS_Factor.tif&quot;</span>)</span>
+<span id="cb22-4"><a href="applying-the-rusle-equation.html#cb22-4" aria-hidden="true" tabindex="-1"></a>C_PreBurn <span class="ot">=</span> <span class="fu">raster</span>(<span class="st">&quot;data/4/C/C_Factor_PreBurn.tif&quot;</span>)</span></code></pre></div>
+</div>
+<div id="step-2-set-the-extent-of-rusle-factors" class="section level3 hasAnchor" number="1.1.2">
+<h3><span class="header-section-number">1.1.2</span> Step 2: Set the Extent of RUSLE Factors<a href="applying-the-rusle-equation.html#step-2-set-the-extent-of-rusle-factors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="applying-the-rusle-equation.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">extent</span>(K) <span class="ot">&lt;-</span> <span class="fu">extent</span>(LS)</span>
+<span id="cb23-2"><a href="applying-the-rusle-equation.html#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">extent</span>(C) <span class="ot">&lt;-</span> <span class="fu">extent</span>(LS)</span>
+<span id="cb23-3"><a href="applying-the-rusle-equation.html#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">extent</span>(R) <span class="ot">&lt;-</span> <span class="fu">extent</span>(LS)</span>
+<span id="cb23-4"><a href="applying-the-rusle-equation.html#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fu">extent</span>(C_PreBurn) <span class="ot">&lt;-</span> <span class="fu">extent</span>(LS)</span></code></pre></div>
+</div>
+<div id="step-3-resample-rusle-factors" class="section level3 hasAnchor" number="1.1.3">
+<h3><span class="header-section-number">1.1.3</span> Step 3: Resample RUSLE Factors<a href="applying-the-rusle-equation.html#step-3-resample-rusle-factors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="applying-the-rusle-equation.html#cb24-1" aria-hidden="true" tabindex="-1"></a>K <span class="ot">&lt;-</span>  <span class="fu">resample</span>(K, LS)</span>
+<span id="cb24-2"><a href="applying-the-rusle-equation.html#cb24-2" aria-hidden="true" tabindex="-1"></a>R <span class="ot">&lt;-</span>  <span class="fu">resample</span>(R, LS)</span>
+<span id="cb24-3"><a href="applying-the-rusle-equation.html#cb24-3" aria-hidden="true" tabindex="-1"></a>C <span class="ot">&lt;-</span>  <span class="fu">resample</span>(C, LS)</span>
+<span id="cb24-4"><a href="applying-the-rusle-equation.html#cb24-4" aria-hidden="true" tabindex="-1"></a>C_PreBurn <span class="ot">&lt;-</span>  <span class="fu">resample</span>(C_PreBurn, LS)</span></code></pre></div>
+</div>
+<div id="step-4-combine-factors-using-the-rusle" class="section level3 hasAnchor" number="1.1.4">
+<h3><span class="header-section-number">1.1.4</span> Step 4: Combine Factors using the RUSLE<a href="applying-the-rusle-equation.html#step-4-combine-factors-using-the-rusle" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="applying-the-rusle-equation.html#cb25-1" aria-hidden="true" tabindex="-1"></a>RUSLE_PreBurn <span class="ot">&lt;-</span> LS<span class="sc">*</span>K<span class="sc">*</span>R<span class="sc">*</span>C</span></code></pre></div>
+<center>
+<img src="img/rusle_pre_burn.png" style="width:60.0%" />
+</center>
+</div>
+</div>
+<div id="application-1-rusle-post-burn-1" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Application 1: RUSLE Post Burn<a href="applying-the-rusle-equation.html#application-1-rusle-post-burn-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="step-1-load-rusle-factors-1" class="section level3 hasAnchor" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Step 1: Load RUSLE Factors<a href="applying-the-rusle-equation.html#step-1-load-rusle-factors-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="applying-the-rusle-equation.html#cb26-1" aria-hidden="true" tabindex="-1"></a>K <span class="ot">=</span> <span class="fu">raster</span>(<span class="st">&quot;data/4/K/K_Factor.tif&quot;</span>)</span>
+<span id="cb26-2"><a href="applying-the-rusle-equation.html#cb26-2" aria-hidden="true" tabindex="-1"></a>R <span class="ot">=</span> <span class="fu">raster</span>(<span class="st">&quot;data/4/R/R_Factor.tif&quot;</span>)</span>
+<span id="cb26-3"><a href="applying-the-rusle-equation.html#cb26-3" aria-hidden="true" tabindex="-1"></a>LS <span class="ot">=</span> <span class="fu">raster</span>(<span class="st">&quot;data/4/LS/LS_Factor.tif&quot;</span>)</span>
+<span id="cb26-4"><a href="applying-the-rusle-equation.html#cb26-4" aria-hidden="true" tabindex="-1"></a>C_PostBurn <span class="ot">=</span> <span class="fu">raster</span>(<span class="st">&quot;data/4/C/C_Factor_PostBurn.tif&quot;</span>)</span></code></pre></div>
+</div>
+<div id="qstep-2-set-the-extent-of-rusle-factors" class="section level3 hasAnchor" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> QStep 2: Set the Extent of RUSLE Factors<a href="applying-the-rusle-equation.html#qstep-2-set-the-extent-of-rusle-factors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="applying-the-rusle-equation.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">extent</span>(K) <span class="ot">&lt;-</span> <span class="fu">extent</span>(LS)</span>
+<span id="cb27-2"><a href="applying-the-rusle-equation.html#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">extent</span>(C) <span class="ot">&lt;-</span> <span class="fu">extent</span>(LS)</span>
+<span id="cb27-3"><a href="applying-the-rusle-equation.html#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="fu">extent</span>(R) <span class="ot">&lt;-</span> <span class="fu">extent</span>(LS)</span>
+<span id="cb27-4"><a href="applying-the-rusle-equation.html#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="fu">extent</span>(C_PostBurn) <span class="ot">&lt;-</span> <span class="fu">extent</span>(LS)</span></code></pre></div>
+</div>
+<div id="step-3-resample-rusle-factors-1" class="section level3 hasAnchor" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> Step 3: Resample RUSLE Factors<a href="applying-the-rusle-equation.html#step-3-resample-rusle-factors-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="applying-the-rusle-equation.html#cb28-1" aria-hidden="true" tabindex="-1"></a>K <span class="ot">&lt;-</span>  <span class="fu">resample</span>(K, LS)</span>
+<span id="cb28-2"><a href="applying-the-rusle-equation.html#cb28-2" aria-hidden="true" tabindex="-1"></a>R <span class="ot">&lt;-</span>  <span class="fu">resample</span>(R, LS)</span>
+<span id="cb28-3"><a href="applying-the-rusle-equation.html#cb28-3" aria-hidden="true" tabindex="-1"></a>C <span class="ot">&lt;-</span>  <span class="fu">resample</span>(C, LS)</span>
+<span id="cb28-4"><a href="applying-the-rusle-equation.html#cb28-4" aria-hidden="true" tabindex="-1"></a>C_PostBurn <span class="ot">&lt;-</span>  <span class="fu">resample</span>(C_PostBurn, LS)</span></code></pre></div>
+</div>
+<div id="step-4-combine-factors-using-the-rusle-1" class="section level3 hasAnchor" number="1.2.4">
+<h3><span class="header-section-number">1.2.4</span> Step 4: Combine Factors using the RUSLE<a href="applying-the-rusle-equation.html#step-4-combine-factors-using-the-rusle-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="applying-the-rusle-equation.html#cb29-1" aria-hidden="true" tabindex="-1"></a>RUSLE_PostBurn <span class="ot">&lt;-</span> LS<span class="sc">*</span>K<span class="sc">*</span>R<span class="sc">*</span>C</span></code></pre></div>
+<center>
+<img src="img/rusle_post_burn.png" style="width:60.0%" />
+</center>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sec-calculating-rusle-factors.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/06-blocks.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

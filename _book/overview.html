@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling.</title>
+  <meta name="description" content="The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling." />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling." />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling." />
+  
+  
+  
+
+
+
+<meta name="date" content="2023-02-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="factors.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i>Project Overview</a>
+<ul>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#motivation"><i class="fa fa-check"></i>Motivation</a></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#objective"><i class="fa fa-check"></i>Objective</a></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#background"><i class="fa fa-check"></i>Background</a></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#limitations"><i class="fa fa-check"></i>Limitations</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html"><i class="fa fa-check"></i>RUSLE Factors</a>
+<ul>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-1"><i class="fa fa-check"></i>Factor 1 - Rainfall Erosivity (R)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-2"><i class="fa fa-check"></i>Factor 2 - Slope Length (LS)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#factor3"><i class="fa fa-check"></i>Factor 3 - Soil Erodibility (K)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-4"><i class="fa fa-check"></i>Factor 4 - Crop/Vegetation and Management Factor (C)</a></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-5"><i class="fa fa-check"></i>Factor 5 - The Support Practice Factor (P)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-Data-Requirements.html"><a href="sec-Data-Requirements.html"><i class="fa fa-check"></i>Data Requirements</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html"><i class="fa fa-check"></i>Methods for Calculating RUSLE Factors</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-required-r-packages"><i class="fa fa-check"></i>RStudio Preparation:</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#packages"><i class="fa fa-check"></i>Required R Packages:</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-rstudio-preparation"><i class="fa fa-check"></i>Setting the Coordinate Reference System:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-factor-1-method"><i class="fa fa-check"></i>Factor 1 - Rainfall Erosivity (R)</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-R-input-data"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-calculating-the-r-factor"><i class="fa fa-check"></i>Calculating the R Factor:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-2"><i class="fa fa-check"></i>Factor 2 - Slope Length (LS)</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-ls-input-data"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-calculating-the-ls-factor"><i class="fa fa-check"></i>Calculating the LS Factor:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-factor-3"><i class="fa fa-check"></i>Factor 3 - Soil Erodibility (K)</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-input-data-ls"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-calculating-the-k-factor"><i class="fa fa-check"></i>Calculating the K Factor:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="factors.html"><a href="factors.html#sec-factor-4"><i class="fa fa-check"></i>Factor 4 - Crop/Vegetation and Management Factor</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-input-data-c"><i class="fa fa-check"></i>Input Data:</a></li>
+<li class="chapter" data-level="" data-path="sec-methods-for-calculating-rusle-factors.html"><a href="sec-methods-for-calculating-rusle-factors.html#sec-calculating-the-c-factor"><i class="fa fa-check"></i>Calculating the C Factor:</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html"><i class="fa fa-check"></i>Applying the RUSLE Equation:</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-application-1-rusle-post-burn"><i class="fa fa-check"></i>Application 1: RUSLE Post Burn</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-1-load-rusle-factors"><i class="fa fa-check"></i>Step 1: Load RUSLE Factors</a></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-3-re-sample-rusle-factors"><i class="fa fa-check"></i>Step 2: Re-sample RUSLE Factors</a></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-4-combine-factors-using-the-rusle"><i class="fa fa-check"></i>Step 3: Combine Factors using the RUSLE</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-application-2-rusle-post-burn"><i class="fa fa-check"></i>Application 2: RUSLE Post Burn</a>
+<ul>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-1-load-rusle-factors_post"><i class="fa fa-check"></i>Step 1: Load RUSLE Factors</a></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-3-resample-rusle-factors"><i class="fa fa-check"></i>Step 2: Re-sample RUSLE Factors</a></li>
+<li class="chapter" data-level="" data-path="sec-applying-the-rusle-equation.html"><a href="sec-applying-the-rusle-equation.html#sec-step-4-combine-factors-using-the-rusle-post"><i class="fa fa-check"></i>Step 3: Combine Factors using the RUSLE</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling.</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">The Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling.</h1>
+<p class="author multi-author"><em>Ilythia D. Morley, Natasha Neumann, François-Nicolas Robinne, Sarah Crookshanks, Tom Bradley</em></p>
+<p class="date"><em>2023-02-27</em></p>
+</div>
+<div id="overview" class="section level1 unnumbered hasAnchor">
+<h1>Project Overview<a href="overview.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="motivation" class="section level2 unnumbered hasAnchor">
+<h2>Motivation<a href="overview.html#motivation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Modelling soil erosion in post-burn areas is critical for understanding how broad-scale change impacts soil properties and structures. The RUSLE, the most commonly used soil erosion model, has primarily been applied to model soil erosion in agricultural regions. Applying the RUSLE in non-agriculture regions presents a substantial challenge. This challenge is driven by data availability and the applicability of RUSLE factors for non-uniform slopes and cover classes. As a result, RUSLE outcome values for non-linear, semi-natural, or steep regions must be considered the spatial representation of trends in soil erosion. In this report, we demonstrate the application of the RUSLE for modelling soil erosion across two watersheds in the Kootenay region of British Columbia. The RUSLE soil erosion maps demonstrate the spatial variation of soil erosion across the study area and signify areas where soil erosion is predicted to be higher or lower.</p>
+</div>
+<div id="objective" class="section level2 unnumbered hasAnchor">
+<h2>Objective<a href="overview.html#objective" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This project aims to apply the Revised Universal Soil Loss Equation (RUSLE) for post-fire soil erosion modelling in a study area in the West Kootenay region of southeastern British Columbia. The specific objectives of this work are to (i) collect and process soil erosion modelling data (rainfall, soil erodibility, slope length, crop cover, and management practices), (ii) apply the RUSLE across the study area, and (iii) simulate RUSLE modelling under variable fire extent conditions. This report intends to demonstrate the application of the RUSLE across a heterogeneous landscape and provide guidelines for future soil erosion modelling.</p>
+</div>
+<div id="background" class="section level2 unnumbered hasAnchor">
+<h2>Background<a href="overview.html#background" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Soil erosion involves multiple processes which collectively impact the transportation of particles across landscapes. Assessing and mitigating soil erosion and land degradation is critical due to the possible effects of these processes, which include nutrient loss, river and reservoir siltation, water quality degradation, and decreases in soil productivity (<a href="https://www.researchgate.net/publication/257785877_Estimation_of_soil_losses_by_USLE_model_using_GIS_at_Mashhad_plain_Northeast_of_Iran">Bagherzadeh, 2014</a>). Across a landscape, erosion can result from flow, occur within channels of concentrated flow (rills and gullies), and occur through raindrop impact and overland flow (<a href="https://www.researchgate.net/publication/223520981_A_review_of_hillslope_and_watershed_scale_erosion_and_sediment_transport_models">Aksoy and Kavvas, 2005</a>).</p>
+<p>Wildfires are identified as one of the main drivers of soil erosion and land degradation (<a href="https://www.sciencedirect.com/science/article/pii/S0012825205001467">Shakesby and Doerr, 2006</a>). One direct effect of wildfires is the loss of protective cover, which reduces rainfall interception, surface roughness, evapotranspiration, and the infiltration capacity of soils. Soil structure can be altered directly in moderate to high-severity wildfires due to the destruction of the organic or mineralogical bindings of soil particles (<a href="https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj2007.0432">Larsen and MacDonald, 2007</a>; <a href="https://www.researchgate.net/publication/284913901_Modelling_the_Effect_of_Soil_Burn_Severity_on_Soil_Erosion_at_Hillslope_Scale_in_the_First_Year_Following_Wildfire_in_nw_Spain">Fernández et al., 2010</a>). After fires, the fraction of bare soil exposed to raindrop impact is increased, allowing the kinetic energy of raindrops to be directly transferred to the soil surface, where to soil structure is degraded (<a href="http://www.fsl.orst.edu/ltep/Biscuit/Biscuit_files/Refs/DeBano%20JH2000b%20fire.pdf">DeBano et al., 1998</a>; <a href="https://www.researchgate.net/publication/222698132_Fire_Effects_on_Infiltration_Rates_After_Prescribed_Fire_in_Northern_Rocky_Mountain_Forests_USA">Robichaud et al., 2000</a>). The destruction of soil structure, both directly and indirectly by fire, contributes to runoff and particle detachment, and increases sediment loss (<a href="https://www.sciencedirect.com/science/article/pii/S0012825205001467">Shakesby and Doerr, 2006</a>). In some conditions, the removal of the surface cover, combined with fire-induced changes, leads to the creation of soil crusts, which inhibit infiltration (<a href="https://www.sciencedirect.com/science/article/pii/S0925857418304713">Silva et al., 2019</a>).</p>
+<p>Effective land management in post-fire regions can mitigate soil erosion and limit soil degradation; such efforts can be improved by understanding how erosion processes occur and what areas are vulnerable to soil loss. Methods for estimating the risk of soil erosion are essential for planning post-fire soil management measures (<a href="https://www.jstor.org/stable/42952602">Vega et al., 2013</a>). Advances in technology, such as the development of soil erosion models and increases in computing power for spatial analysis, have assisted in making soil erosion modelling faster and more accurate. The most widely used models to estimate post-fire soil erosion by water are empirically based. These include the Universal Soil Loss Equation (USLE; <a href="https://naldc.nal.usda.gov/download/CAT79706928/PDF">Wischmeier and Smith, 1978</a>) and its revised form RUSLE (<a href="https://www.ars.usda.gov/ARSUserFiles/64080530/RUSLE/AH_703.pdf">Renard et al., 1997</a>). The wide application of the USLE and the RUSLE is related to the fact that empirical models require less input data than physically based ones (<a href="https://www.researchgate.net/publication/228552294_A_Review_of_Erosion_and_Sediment_Transport_Models">Merrit et al., 2003</a>). The USLE and RUSLE models, were developed to estimate soil erosion by water in agricultural regions and are not commonly applied for erosion modeling across rugged or burned areas with heterogenous vegetation cover (<a href="https://www.researchgate.net/publication/270163637_Modeling_the_impacts_of_wildfire_on_runoff_and_pollutant_transport_from_coastal_watersheds_to_the_nearshore_environment">Morrison and Kolden, 2015</a>; <a href="https://www.mdpi.com/2073-4441/12/7/1995/htm">Hosseini et al., 2018</a>) and soil properties (<a href="https://www.sciencedirect.com/science/article/pii/S2666683921000365">Chen et al., 2013</a>; <a href="https://www.researchgate.net/publication/307181869_Synthesis_of_soil-hydraulic_properties_and_infiltration_timescales_in_wildfire-affected_soils_Synthesis_of_soil-hydraulic_properties_in_wildfire-affected_soils">Moody et al., 2013</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0013935117317644">Fernández and Vega, 2018</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0016706119329052">Nunes et al., 2020</a>).</p>
+<p>Post-fire soil erosion modelling can provide accurate predictions of the hydrological and geomorphological effects of fires across variable landscapes. However, building a input data database is difficult, not only because of regional differences in climate, soil properties, and fire characteristics but also due to differences in research approaches and scales (<a href="https://www.sciencedirect.com/science/article/pii/S0012825205001467">Shakesby and Doerr, 2006</a>), or due to the model limitations in representing soil erosion processes (<a href="https://www.researchgate.net/publication/222472796_Why_Soil_Erosion_Models_Over-Predict_Small_Soil_Losses_and_Under-Predict_Large_Soil_Losses">Nearing, 1998</a>).The need to adapt models to post-fire conditions and validate their predictions has been emphasized in several studies (<a href="https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj2007.0432">Larsen and MacDonald, 2007</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0013935117317644">Fernández and Vega, 2018</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0012825221001112">Girona-García et al.,2021</a>), and identified as equally important to developing a new model specifically for post-fire conditions.</p>
+<p>The integration of existing soil erosion models, field data, and data provided by remote sensing technologies through the use of geographic information systems (GIS) is an asset to post-fire soil erosion studies (<a href="https://www.researchgate.net/publication/242519680_Multi-temporal_soil_erosion_risk_assessment_in_N_Chalkidiki_using_a_modified_USLE_raster_model">Gitas et al., 2009</a>). Remote sensing, which enables the modelling of long- and short-term variation in soil erosion, is a valuable tool for quantifying spatial patterns of soil erosion and land degradation over time (<a href="https://www.sciencedirect.com/science/article/pii/S1674987115001255#!">Ganasri et al., 2016</a>). The increased availability of remote sensing data (<a href="https://www.nature.com/articles/513030a">Wulder &amp; Coops, 2014</a>) and ongoing computational advancements (<a href="https://www.researchgate.net/publication/312518132_Satellite_detection_of_rising_maize_yield_heterogeneity_in_the_US_Midwest">Azzari &amp; Lobell, 2017</a>) have facilitated broad-scale soil erosion research (<a href="https://www.sciencedirect.com/science/article/pii/S0301479721018740">North et al., 2022</a>, <a href="https://www.tandfonline.com/doi/abs/10.1080/09715010.2020.1814881">Prasad et al., 2022</a>). Developing semi-automated soil erosion modelling methods using common coding languages, such as R, and GIS programs, such as ArcGIS, facilitate the development of consistent, and comparable modelling methods.</p>
+</div>
+<div id="limitations" class="section level2 unnumbered hasAnchor">
+<h2>Limitations<a href="overview.html#limitations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Despite the many strengths of the RUSLE, it has limitations such that it does not capture gullying and/or shallow landslides, is not process-based, does not capture feedbacks between model components, nor does it estimate delivery/deposition of eroded sediments. Being an empirical model developed in North America for agriculture, RUSLE applications should be validated and/or calibrated when estimating surface erosion. Previous reviews have covered these limitations in detail (<a href="https://www.sciencedirect.com/science/article/pii/S2095633919300048">Alewell et al., 2019</a>) and further demonstrated that RUSLE outputs have similar ranges of uncertainty when compared with more complex process-based physical models such as WEPP and PESERA. In most cases, there remain large uncertainties associated with the predictions made by models (<a href="https://www.researchgate.net/publication/334496630_On_the_evaluation_of_soil_erosion_models_Are_we_doing_enough">Batista et al. 2019</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0169555X20302725">Baartman et al. 2020</a>), particularly for those concerned with routing sediment through large and/or complex watersheds.</p>
+<p>The RUSLE erodibility factor (K) has been the main target of criticism from several researchers. <a href="https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj2007.0432">Larsen and MacDonald (2007)</a> and <a href="https://www.researchgate.net/publication/222540666_Modeling_soil_erosion_on_steep_sagebrush_rangeland_before_and_after_prescribed_fire">Moffet et al. (2007)</a> suggested that the current algorithms for calculating soil erodibility are not consistent with the understanding of post-fire erosion processes. Fernández and Vega (2018) also concluded that the erodibility in the RUSLE equation does not reflect fire-induced changes in soil properties because it does not consider the influence of burn severity; while others state that the K factor does not reflect the changes in soil permeability and structure after wildfire (<a href="https://onlinelibrary.wiley.com/doi/10.1002/hyp.13543">Moody et al., 2013</a>; <a href="https://www.researchgate.net/publication/270163637_Modeling_the_impacts_of_wildfire_on_runoff_and_pollutant_transport_from_coastal_watersheds_to_the_nearshore_environment">Morrison and Kolden, 2015</a>). <a href="https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj2007.0432">Larsen and MacDonald (2007)</a> and <a href="https://www.researchgate.net/publication/222540666_Modeling_soil_erosion_on_steep_sagebrush_rangeland_before_and_after_prescribed_fire">Moffet et al. (2007)</a>) also suggested that, to achieve greater precision, the K factor should be reformulated and <a href="https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj2007.0432">Larsen and MacDonald (2007)</a> also suggested that soil moisture would be more properly included in the K factor, followed by an adaptation to site-specific conditions.</p>
+<p>Several authors adapted the rainfall erosivity to local climates. However, this raised criticism of the application of the RUSLE model in recently burned areas. For example, <a href="https://acsess.onlinelibrary.wiley.com/doi/abs/10.2136/sssaj2007.0432">Larsen and MacDonald (2007)</a> suggested that the R calculated according to <a href="https://naldc.nal.usda.gov/download/CAT79706928/PDF">Wischmeier and Smith, 1978</a> equation would overestimate predictions due to the assumed linearity between the rainfall erosivity and sediment yields. In contrast, the same authors also suggested that if the rainfall erosivity factor is adapted to different climates, it may lead to a lower final value for the predicted soil erosion by water, with inherent implications for model performance. This study aims to produce an overview of soil erosion in the study area, which reflect the general erosion rates rather than specific per ha values. Our approach reflects the limitations of the RUSLE for post-burn areas. <a href="https://www.sciencedirect.com/science/article/pii/S0013935117317644">Fernández and Vega, (2018)</a> also concluded that the soil erodibility (K) in the RUSLE equation does not reflect fire-induced changes in soil properties because it does not consider the influence of burn severity; while others state that the K factor does not reflect the changes in soil permeability and structure after fire (<a href="https://onlinelibrary.wiley.com/doi/10.1002/hyp.13543">Moody et al., 2013</a>; <a href="https://www.researchgate.net/publication/270163637_Modeling_the_impacts_of_wildfire_on_runoff_and_pollutant_transport_from_coastal_watersheds_to_the_nearshore_environment">Morrison and Kolden, 2015</a>).</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="factors.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-motivation.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
